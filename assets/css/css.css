@@ -1,0 +1,13 @@
+body {
+    background-image: url("../images/istockphoto-921211004-170667a.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 70%;
+}
+td {
+    text-align: center;
+}
+tr {
+    text-align: center;
+}
