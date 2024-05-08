@@ -155,12 +155,17 @@
     <div class="shape"></div>
     <div class="shape"></div>
 </div>
-<h1>Signup</h1>
-<form method="POST">
+<form action="{% url 'user:signup' %}" method="post">
     {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Signup</button><a href="{% url 'books:login' %}"></a>
-    <a href="{% url 'books:login' %}">Siz ro'yhatdan o'tgan bo'lsangiz !..</a>
+    <input type="text" name="username" placeholder="username">
+    <input type="email" name="email" placeholder="email">
+    <input type="text" name="password1" placeholder="password">
+    <input type="text" name="password2" placeholder="confirm password">
+    <a href="{% url 'user:login' %}">Siz ro'yhatdan o'tgan bo'lsangiz !..</a>
+    <button type="submit"> Register </button>
+</form>
+
+
 </form>
 </body>
 </html>

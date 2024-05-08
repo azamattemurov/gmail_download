@@ -85,6 +85,9 @@
                 line-height: 42px;
                 text-align: center;
             }
+            form {
+                text-align: center;
+            }
 
             label{
                 display: block;
@@ -160,7 +163,7 @@
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Log in</button><a href="{% url 'books:list' %}"></a>
-    <a href="{% url 'books:signup' %}">Yangi account ochasizmi ?</a>
+        <h5><a href="{% url 'user:signup' %}">Yangi account ochasizmi ?</a></h5>
     </form>
     </body>
     </html>
